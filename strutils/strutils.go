@@ -6,6 +6,7 @@ import (
 	"github.com/Will-Liang/gotoolbox/sat"
 	"regexp"
 	"strconv"
+	"strings"
 )
 
 // 传入字符串，判断字符串是否纯英文
@@ -61,4 +62,31 @@ func StrToInt(str string) int {
 		return 0
 	}
 	return value
+}
+
+// 将字符串切片中的每一个字符串按照分隔符切分
+// Deprecated: SplitStrWithDelimiters需要调用的，不推荐直接调用
+func SplitAndCleanValues(inputValues []string, delimiter string) []string {
+
+	cleanedValues := []string{}
+	for _, inputValue := range inputValues {
+		subValues := strings.Split(inputValue, delimiter)
+		for _, subValue := range subValues {
+			cleanedSubValue := strings.TrimSpace(subValue)
+			if cleanedSubValue != "" {
+				cleanedValues = append(cleanedValues, cleanedSubValue)
+			}
+		}
+	}
+	return cleanedValues
+}
+
+// 使用分隔符将字符串分成切片
+func SplitStrWithDelimiters(value string, delimiters []string) []string {
+	//示例：delimiters = []string{";", "；", "\n", "\r"}
+	valuesToProcess := []string{value}
+	for _, delimiter := range delimiters {
+		valuesToProcess = SplitAndCleanValues(valuesToProcess, delimiter)
+	}
+	return valuesToProcess
 }
