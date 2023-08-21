@@ -2,8 +2,8 @@ package fileutils
 
 import (
 	"fmt"
+	"github.com/Will-Liang/gotoolbox/logutils"
 	"github.com/duke-git/lancet/v2/fileutil"
-	"gotoolbox/logutils"
 	"os"
 	"path"
 	"path/filepath"

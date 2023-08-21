@@ -2,8 +2,8 @@ package strutils
 
 import (
 	"fmt"
-	"gotoolbox/logutils"
-	"gotoolbox/sat"
+	"github.com/Will-Liang/gotoolbox/logutils"
+	"github.com/Will-Liang/gotoolbox/sat"
 	"regexp"
 	"strconv"
 )
