@@ -77,7 +77,7 @@ This is a Go utility library.
 - **StrToFloat**: 将字符串转成float
 - **StrToInt**: 将字符串转成Int
 
-## <h2 id="timeutils">6. timeutils 包实现时间的有关函数</h2>
+## <h2 id="timeutils">7. timeutils 包实现时间的有关函数</h2>
 
 
 
@@ -87,7 +87,7 @@ This is a Go utility library.
 - **GetHourMin**: 中文繁体转简体，获得时分
 
 
-## <h2 id="utils">7. utils 包实现一些基本工具函数</h2>
+## <h2 id="utils">8. utils 包实现一些基本工具函数</h2>
 
 
 
