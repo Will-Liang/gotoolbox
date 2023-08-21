@@ -1,4 +1,4 @@
-module gotoolbox
+module github.com/Will-Liang/gotoolbox
 
 go 1.19
 
