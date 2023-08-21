@@ -9,7 +9,7 @@ This is a Go utility library.
 ## 安装
 
 ```
-go get github.com/Will-Liang/gotoolbox
+go get github.com/Will-Liang/gotoolbox@v0.0.3
 ```
 
 
