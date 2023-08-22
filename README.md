@@ -1,15 +1,21 @@
 # gotoolbox
 
-This is a Go utility library.
+<div align=center>
+    ![Go version](https://img.shields.io/badge/go-%3E%3Dv1.20-9cf)
+    [![Release](https://img.shields.io/badge/release-2.2.5-green.svg)](https://github.com/Will-Liang/gotoolbox/releases)
+    [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/duke-git/lancet/blob/main/LICENSE)
+</div>
 
-依赖于 https://github.com/duke-git/lancet
+
+
+This is a Go utility library.
 
 
 
 ## 安装
 
 ```
-go get github.com/Will-Liang/gotoolbox@v0.0.6
+go get github.com/Will-Liang/gotoolbox@v0.0.7
 ```
 
 
