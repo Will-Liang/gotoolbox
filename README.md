@@ -22,6 +22,7 @@ go get github.com/Will-Liang/gotoolbox@v0.0.6
 - [jsonutils](#jsonutils)
 - [logutils](#logutils)
 - [maputils](#maputils)
+- [requestutils](#requestutils)
 - [sliceutils](#sliceutils)
 - [strutils](#strutils)
 - [timeutils](#timeutils)
@@ -65,7 +66,17 @@ go get github.com/Will-Liang/gotoolbox@v0.0.6
 
 - **ExistKey**: map是否存在该key
 
-#### <h2 id="sliceutils">5. sliceutils 包实现切片的有关函数</h2>
+
+
+#### <h2 id="requestutils">5. requestutils包实现记录日志的有关函数</h2>
+
+
+
+函数列表：
+
+- **ExistKey**: map是否存在该key
+
+#### <h2 id="sliceutils">6. sliceutils 包实现切片的有关函数</h2>
 
 
 
@@ -73,7 +84,7 @@ go get github.com/Will-Liang/gotoolbox@v0.0.6
 
 - **IsSlice**: 判断传入的类型是不是切片
 
-#### <h2 id="strutils">6. strutils 包实现字符串的有关函数</h2>
+#### <h2 id="strutils">7. strutils 包实现字符串的有关函数</h2>
 
 
 
@@ -84,8 +95,9 @@ go get github.com/Will-Liang/gotoolbox@v0.0.6
 - **SimpleConvertTraditional**: 中文简体转繁体
 - **StrToFloat**: 将字符串转成float
 - **StrToInt**: 将字符串转成Int
+- **SplitStrWithDelimiters**: 使用分隔符将字符串分成切片
 
-#### <h2 id="timeutils">7. timeutils 包实现时间的有关函数</h2>
+#### <h2 id="timeutils">8. timeutils 包实现时间的有关函数</h2>
 
 
 
@@ -95,7 +107,7 @@ go get github.com/Will-Liang/gotoolbox@v0.0.6
 - **GetHourMin**: 中文繁体转简体，获得时分
 
 
-#### <h2 id="utils">8. utils 包实现一些基本工具函数</h2>
+#### <h2 id="utils">9. utils 包实现一些基本工具函数</h2>
 
 
 
