@@ -74,7 +74,7 @@ go get github.com/Will-Liang/gotoolbox@v0.0.6
 
 函数列表：
 
-- **ExistKey**: map是否存在该key
+- **Get**: Get请求
 
 #### <h2 id="sliceutils">6. sliceutils 包实现切片的有关函数</h2>
 
