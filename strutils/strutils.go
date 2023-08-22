@@ -90,3 +90,12 @@ func SplitStrWithDelimiters(value string, delimiters []string) []string {
 	}
 	return valuesToProcess
 }
+
+// 判断 prefix 是否是 str 的前缀
+func IsPrefix(str, prefix string, caseSensitive bool) bool {
+	// 区分大小写
+	if caseSensitive {
+		return strings.HasPrefix(str, prefix)
+	}
+	return strings.HasPrefix(strings.ToLower(str), strings.ToLower(prefix))
+}
