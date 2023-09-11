@@ -32,6 +32,7 @@ func RandomSleep(minSeconds, maxSeconds int) {
 }
 
 // 生成指定长度的随机字符串
+// length 长度
 func GenerateRandomString(length int) (string, error) {
 	// 计算生成的字节数
 	byteLength := (length * 6) / 8 // base64 编码后，每个字符占 6 位，8 位字节可以编码为 6 位字符
