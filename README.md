@@ -110,7 +110,7 @@ go get github.com/Will-Liang/gotoolbox@v0.0.7
 函数列表：
 
 - **GetCurrentUnix**: 获取当前时间的时间戳，长度为13位(以毫秒为单位)
-- **GetHourMin**: 中文繁体转简体，获得时分
+- **GetHourMin**: 获得时分
 
 
 #### <h2 id="utils">9. utils 包实现一些基本工具函数</h2>
