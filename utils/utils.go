@@ -1,8 +1,10 @@
 package utils
 
 import (
+	"crypto/md5"
 	crypto_rand "crypto/rand"
 	"encoding/base64"
+	"encoding/hex"
 	"fmt"
 	"math/rand"
 	"net/url"
@@ -49,4 +51,19 @@ func GenerateRandomString(length int) (string, error) {
 
 	// 截取指定长度的字符串
 	return randomString[:length], nil
+}
+
+// 计算字符串的 MD5 哈希值并返回十六进制字符串
+func GenerateStrMD5(input string) string {
+	// 创建 MD5 哈希对象
+	hasher := md5.New()
+
+	// 将字符串转换为字节数组并写入哈希对象
+	hasher.Write([]byte(input))
+
+	// 计算哈希值并将其转换为十六进制字符串
+	md5Hash := hasher.Sum(nil)
+	md5String := hex.EncodeToString(md5Hash)
+	// 长度 32位
+	return md5String
 }
