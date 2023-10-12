@@ -124,6 +124,7 @@ go get github.com/Will-Liang/gotoolbox
 - **RandomSleep**: 在两个整数中间随机随眠若干秒
 
 - **GenerateRandomString**: 生成指定长度的字符串
+- **GenerateStrMD5**: 生成指定字符串的32位MD5
 
 
 

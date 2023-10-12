@@ -7,7 +7,6 @@ import (
 	"os"
 	"path"
 	"path/filepath"
-	"strings"
 )
 
 // 检查路径 如果不存此路径下的文件，创建文件
@@ -22,13 +21,10 @@ func CheckPath(path string, flag int) string {
 	//该路径不存在，创建目录或者文件
 	if flag == 1 {
 		//判断文件的父级目录是否存在
-		file_path := filepath.Dir(path)
-		if !fileutil.IsExist(file_path) {
-			//路径格式为相对路径，如果不以 ./ 开头会出问题
-			if !strings.HasPrefix(path, "./") {
-				path = "./" + path
-			}
-			if !CreateDir(path) {
+		dir_path := filepath.Dir(path)
+		if !fileutil.IsExist(dir_path) {
+
+			if !CreateDir(dir_path) {
 				//创建路径失败
 				return ""
 			}
