@@ -18,3 +18,10 @@ func GetHourMin() string {
 	min := parts[1]
 	return hour + min
 }
+
+// 获取当前时间格式化后的字符串
+func GetCurrentFormattedTime() string {
+	currentTime := time.Now()
+	formattedTime := currentTime.Format("2006-01-02 15:04:05")
+	return formattedTime
+}
