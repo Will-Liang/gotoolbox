@@ -110,6 +110,7 @@ go get github.com/Will-Liang/gotoolbox
 
 函数列表：
 
+- **GetCurrentFormattedTime**: 获取当前时间格式化后的字符串，例：2006-01-02 15:04:05
 - **GetCurrentUnix**: 获取当前时间的时间戳，长度为13位(以毫秒为单位)
 - **GetHourMin**: 获得时分
 
