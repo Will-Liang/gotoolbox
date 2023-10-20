@@ -64,7 +64,9 @@ go get github.com/Will-Liang/gotoolbox
 
 函数列表：
 
+- **GetColorLog**: 获得带有颜色的日志信息
 - **GetLog**: 获得一个日志信息
+- **PrintErrorLog**: 打印带有颜色的日志信息
 #### <h2 id="maputils">4. maputils 包实现记录日志的有关函数</h2>
 
 
