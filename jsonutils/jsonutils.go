@@ -82,6 +82,7 @@ func JsonToLineFile(path string, data interface{}) bool {
 	}
 
 	err = fileutil.WriteStringToFile(path, string(jsonData), true)
+	err = fileutil.WriteStringToFile(path, "\n", true)
 	if err != nil {
 		fmt.Println(logutils.GetLog("ERROR", err.Error()))
 		return false
