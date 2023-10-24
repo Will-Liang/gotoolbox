@@ -35,7 +35,7 @@ go get github.com/Will-Liang/gotoolbox
 - [timeutils](#timeutils)
 - [utils](#utils)
 
-#### <h2 id="fileutils">1. fileutils 包实现文件和路径有关的函数</h2>
+### <h2 id="fileutils">1. fileutils 包实现文件和路径有关的函数</h2>
 
 
 函数列表：
@@ -45,7 +45,7 @@ go get github.com/Will-Liang/gotoolbox
 - **DeleteDirFiles**: 删除给定目录下的所有文件，不删除目录
 - **ListFiles**: 遍历指定目录下的所有文件，返回文件路径和文件名称的切片
 
-#### <h2 id="jsonutils">2. jsonutils 包实现json以及json与文件交互的有关函数</h2>
+### <h2 id="jsonutils">2. jsonutils 包实现json以及json与文件交互的有关函数</h2>
 
 
 函数列表：
@@ -58,7 +58,7 @@ go get github.com/Will-Liang/gotoolbox
 - **JsonToFileFormat**: 将json格式化后写入到文件
 - **JsonToLineFile**: 将json追加到文件中的最后一行
 
-#### <h2 id="logutils">3. logutils 包实现记录日志的有关函数</h2>
+### <h2 id="logutils">3. logutils 包实现记录日志的有关函数</h2>
 
 
 
@@ -67,7 +67,7 @@ go get github.com/Will-Liang/gotoolbox
 - **GetColorLog**: 获得带有颜色的日志信息
 - **GetLog**: 获得一个日志信息
 - **PrintErrorLog**: 打印带有颜色的日志信息
-#### <h2 id="maputils">4. maputils 包实现记录日志的有关函数</h2>
+### <h2 id="maputils">4. maputils 包实现记录日志的有关函数</h2>
 
 
 
@@ -77,7 +77,7 @@ go get github.com/Will-Liang/gotoolbox
 
 
 
-#### <h2 id="requestutils">5. requestutils包实现记录日志的有关函数</h2>
+### <h2 id="requestutils">5. requestutils包实现记录日志的有关函数</h2>
 
 
 
@@ -85,7 +85,7 @@ go get github.com/Will-Liang/gotoolbox
 
 - **Get**: Get请求
 
-#### <h2 id="sliceutils">6. sliceutils 包实现切片的有关函数</h2>
+### <h2 id="sliceutils">6. sliceutils 包实现切片的有关函数</h2>
 
 
 
@@ -93,7 +93,7 @@ go get github.com/Will-Liang/gotoolbox
 
 - **IsSlice**: 判断传入的类型是不是切片
 
-#### <h2 id="strutils">7. strutils 包实现字符串的有关函数</h2>
+### <h2 id="strutils">7. strutils 包实现字符串的有关函数</h2>
 
 
 
@@ -106,7 +106,7 @@ go get github.com/Will-Liang/gotoolbox
 - **StrToInt**: 将字符串转成Int
 - **SplitStrWithDelimiters**: 使用分隔符将字符串分成切片
 
-#### <h2 id="timeutils">8. timeutils 包实现时间的有关函数</h2>
+### <h2 id="timeutils">8. timeutils 包实现时间的有关函数</h2>
 
 
 
@@ -117,7 +117,7 @@ go get github.com/Will-Liang/gotoolbox
 - **GetHourMin**: 获得时分
 
 
-#### <h2 id="utils">9. utils 包实现一些基本工具函数</h2>
+### <h2 id="utils">9. utils 包实现一些基本工具函数</h2>
 
 
 
