@@ -1,6 +1,7 @@
 package fileutils
 
 import (
+	"bufio"
 	"fmt"
 	"github.com/Will-Liang/gotoolbox/logutils"
 	"github.com/duke-git/lancet/v2/fileutil"
@@ -108,4 +109,30 @@ func ListFiles(dirPath string) ([]string, []string) {
 	}
 
 	return paths, names
+}
+
+// 逐行读取文件内容，返回字符串切片
+func ReadLinesFromFile(path string) []string {
+	lines := []string{}
+	if !fileutil.IsExist(path) {
+		return lines // 文件不存在
+	}
+	file, err := os.Open(path)
+	if err != nil {
+		logutils.PrintErrorLog(err.Error())
+		return lines
+	}
+	defer file.Close()
+
+	scanner := bufio.NewScanner(file)
+	for scanner.Scan() {
+		line := scanner.Text()
+		lines = append(lines, line)
+	}
+
+	if err := scanner.Err(); err != nil {
+		logutils.PrintErrorLog(err.Error())
+
+	}
+	return lines
 }
