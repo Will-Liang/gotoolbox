@@ -44,6 +44,7 @@ go get github.com/Will-Liang/gotoolbox
 - **CreateDir**: 创建目录
 - **DeleteDirFiles**: 删除给定目录下的所有文件，不删除目录
 - **ListFiles**: 遍历指定目录下的所有文件，返回文件路径和文件名称的切片
+- **ReadLinesFromFile**: 逐行读取文件内容，返回字符串切片
 
 ### <h2 id="jsonutils">2. jsonutils 包实现json以及json与文件交互的有关函数</h2>
 
@@ -66,7 +67,9 @@ go get github.com/Will-Liang/gotoolbox
 
 - **GetColorLog**: 获得带有颜色的日志信息
 - **GetLog**: 获得一个日志信息
-- **PrintErrorLog**: 打印带有颜色的日志信息
+- **PrintErrorLog**: 打印错误日志信息
+- **PrintWarningLog**: 打印警告日志信息
+- **PrintInfoLog**: 打印提示日志信息
 ### <h2 id="maputils">4. maputils 包实现记录日志的有关函数</h2>
 
 
