@@ -43,7 +43,22 @@ func GetColorLog(log_type string, message string, skip int) string {
 
 }
 
+// 打印错误日志信息
+func PrintErrorLog(message string) {
+	printColorLog("ERROR", message)
+}
+
+// 打印警告日志信息
+func PrintWarningLog(message string) {
+	printColorLog("WARNING", message)
+}
+
+// 打印提示日志信息
+func PrintInfoLog(message string) {
+	printColorLog("INFO", message)
+}
+
 // 打印带有颜色的日志信息
-func PrintErrorLog(log_type string, message string) {
-	fmt.Println(GetColorLog(log_type, message, 2))
+func printColorLog(log_type string, message string) {
+	fmt.Println(GetColorLog(log_type, message, 3))
 }
