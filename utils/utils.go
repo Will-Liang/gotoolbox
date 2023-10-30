@@ -8,6 +8,8 @@ import (
 	"fmt"
 	"math/rand"
 	"net/url"
+	"reflect"
+	"strings"
 	"time"
 )
 
@@ -21,6 +23,35 @@ func FillURLWithMap(urlStr string, data map[string]interface{}) string {
 
 	// 拼接参数到 URL
 	return urlStr + "?" + params.Encode()
+}
+
+// 将结构体中的各个参数填充到url中
+// flag: 0 默认，1 表示将字段名转换为小写
+func FillURLWithStruct(urlStr string, s interface{}, flag int) string {
+	v := reflect.ValueOf(s)
+	if v.Kind() != reflect.Struct {
+		return "" // 返回空字符串表示不是结构体
+	}
+
+	u := url.Values{}
+
+	for i := 0; i < v.NumField(); i++ {
+		field := v.Field(i)
+		fieldName := v.Type().Field(i).Name
+		fieldValue := fmt.Sprintf("%v", field.Interface())
+
+		if fieldValue != "" && flag == 1 {
+			// 将字段名转为小写
+			lowercaseFieldName := strings.ToLower(fieldName)
+			u.Add(lowercaseFieldName, fieldValue)
+		}
+		if fieldValue != "" && flag == 0 {
+			u.Add(fieldName, fieldValue)
+		}
+
+	}
+
+	return urlStr + "?" + u.Encode()
 }
 
 // 在两个整数中间随机随眠若干秒
