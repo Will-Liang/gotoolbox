@@ -127,6 +127,7 @@ go get github.com/Will-Liang/gotoolbox
 函数列表：
 
 - **FillURLWithMap**: 将map中的各个参数填充到url中
+- **FillURLWithStruct**: 将结构体中的各个参数填充到url中
 - **RandomSleep**: 在两个整数中间随机随眠若干秒
 
 - **GenerateRandomString**: 生成指定长度的字符串
