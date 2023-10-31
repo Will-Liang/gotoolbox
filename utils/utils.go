@@ -6,6 +6,7 @@ import (
 	"encoding/base64"
 	"encoding/hex"
 	"fmt"
+	"github.com/Will-Liang/gotoolbox/logutils"
 	"math/rand"
 	"net/url"
 	"reflect"
@@ -27,9 +28,11 @@ func FillURLWithMap(urlStr string, data map[string]interface{}) string {
 
 // 将结构体中的各个参数填充到url中
 // flag: 0 默认，1 表示将字段名转换为小写
+// 如果是指针，应该写为 *s
 func FillURLWithStruct(urlStr string, s interface{}, flag int) string {
 	v := reflect.ValueOf(s)
 	if v.Kind() != reflect.Struct {
+		logutils.PrintErrorLog("The parameter passed in is not a structure. The parameter.Kind() is" + v.Kind().String())
 		return "" // 返回空字符串表示不是结构体
 	}
 
